@@ -1716,6 +1716,10 @@
           var doc = document;
           var $html = $2("html");
           var $body = $2("body");
+          var location = window.location;
+          var isPhantom = /PhantomJS/i.test(navigator.userAgent);
+          var fullScreenEvents = "fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange";
+          var brandElement;
           api.ready = function() {
             var shouldBrand = $html.attr("data-wf-status");
             var publishedDomain = $html.attr("data-wf-domain") || "";
@@ -1733,7 +1737,7 @@
             var fullScreen = doc.fullScreen || doc.mozFullScreen || doc.webkitIsFullScreen || doc.msFullscreenElement || Boolean(doc.webkitFullscreenElement);
             $2(brandElement).attr("style", fullScreen ? "display: none !important;" : "");
           }
-
+      
           function ensureBrand() {
             var found = $body.children(namespace);
             var match = found.length && found.get(0) === brandElement;
