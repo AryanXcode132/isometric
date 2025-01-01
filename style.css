@@ -234,49 +234,7 @@ img {
     display: inline-block;
 }
 
-html.w-mod-touch * {
-    background-attachment: scroll !important;
-}
 
-.w-block {
-    display: block;
-}
-
-.w-inline-block {
-    max-width: 100%;
-    display: inline-block;
-}
-
-.w-clearfix:before,
-.w-clearfix:after {
-    content: " ";
-    grid-area: 1 / 1 / 2 / 2;
-    display: table;
-}
-
-.w-clearfix:after {
-    clear: both;
-}
-
-.w-hidden {
-    display: none;
-}
-
-.w-button {
-    color: #fff;
-    line-height: inherit;
-    cursor: pointer;
-    background-color: #3898ec;
-    border: 0;
-    border-radius: 0;
-    padding: 9px 15px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-input.w-button {
-    -webkit-appearance: button;
-}
 
 html[data-w-dynpage] [data-w-cloak] {
     color: #0000 !important;

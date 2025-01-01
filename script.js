@@ -1,12 +1,4 @@
 
-/*!
- * Webflow: Front-end site library
- * @license MIT
- * Inline scripts may access the api using an async handler:
- *   var Webflow = Webflow || [];
- *   Webflow.push(readyFunction);
- */
-
 (() => {
     var __create = Object.create;
     var __defProp = Object.defineProperty;
@@ -1720,19 +1712,6 @@
           var isPhantom = /PhantomJS/i.test(navigator.userAgent);
           var fullScreenEvents = "fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange";
           var brandElement;
-          api.ready = function() {
-            var shouldBrand = $html.attr("data-wf-status");
-            var publishedDomain = $html.attr("data-wf-domain") || "";
-            if (/\.webflow\.io$/i.test(publishedDomain) && location.hostname !== publishedDomain) {
-              shouldBrand = true;
-            }
-            if (shouldBrand && !isPhantom) {
-              brandElement = brandElement || createBadge();
-              ensureBrand();
-              setTimeout(ensureBrand, 500);
-              $2(doc).off(fullScreenEvents, onFullScreenChange).on(fullScreenEvents, onFullScreenChange);
-            }
-          };
           function onFullScreenChange() {
             var fullScreen = doc.fullScreen || doc.mozFullScreen || doc.webkitIsFullScreen || doc.msFullscreenElement || Boolean(doc.webkitFullscreenElement);
             $2(brandElement).attr("style", fullScreen ? "display: none !important;" : "");
