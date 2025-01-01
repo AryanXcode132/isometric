@@ -1,0 +1,139 @@
+/* Body styles */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #000000;
+    background-image: 
+      radial-gradient(at 47% 3%, hsl(242, 100%, 50%) 0, transparent 59%), 
+      radial-gradient(at 32% 65%, hsl(287, 100%, 50%) 0, transparent 70%),
+      radial-gradient(at 88% 85%, hsl(350.94, 100%, 50%) 0, transparent 65%),
+      radial-gradient(at 25% 93%, hsl(110, 100%, 26%) 0, transparent 55%),
+      radial-gradient(at 78% 35%, hsl(52, 100%, 50%) 0, transparent 55%);
+    font-family: Arial, sans-serif;
+    overflow: auto;
+  }
+  
+  /* Page Heading */
+  .page-heading {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin: 20px 0;
+    font-weight: boldER;
+    text-shadow: 0 2px 4px rgba(255, 0, 0, 0.6);
+    width: 100%; /* Ensures the heading is full width */
+    padding-top: 100px;
+  }
+  
+  /* Container for cards */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 40px; /* Adds space between the heading and the first row */
+  }
+  .yellow{
+    color: yellow;
+  }
+  
+  /* Glassmorphism card effect */
+  .card {
+    padding: 40px;
+    backdrop-filter: blur(14px) saturate(200%);
+    -webkit-backdrop-filter: blur(14px) saturate(200%);
+    background-color: rgba(0, 0, 0, 0.77);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    transform: rotateX(360deg) rotateY(360deg) ;
+    transition: transform 0.9s ease-out, box-shadow 0.3s ease-out, border-color 2.5s ease-out;
+  }
+  
+  .card:hover {
+    /* Neon glow effect */
+    box-shadow: 0 0 15px 5px rgba(255, 255, 0, 0.969), 0 0 30px 10px rgba(0, 0, 0, 0.6);
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  
+  .card h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    margin: 10px 0 20px;
+  }
+  
+  .card .price {
+    font-size: 3rem;
+    margin: 10px 0;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .card ul li {
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .card .button {
+    display: inline-block;
+    background-color: #28a745;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .card .button:hover {
+    background-color: #895700;
+    font-weight: 500;
+  }
+  /* Logo container for each card */
+/* Logo container for each card */
+.card-logo {
+    position: absolute;
+    top: 10px; /* Distance from the top */
+    right: 30px; /* Distance from the right */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Glow effect on card hover */
+
+  
+  /* Computer logo image */
+  .logo-img {
+    width: 100%; /* Make the logo image fit within the container */
+    height: 100%;
+    object-fit: contain; /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Enhance the glow effect */
+  .card:hover .logo-img {
+    transform: scale(2.5); /* Slightly enlarge the logo on hover */
+  }
+  
+  

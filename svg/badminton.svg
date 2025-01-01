@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="badminton">
+  <g fill="#000000" class="color000000 svgShape">
+    <ellipse cx="16" cy="9.21" fill="#e4972e" rx="8.14" ry="8.08" class="color2ebfe4 svgShape"></ellipse>
+    <path fill="#b66b05" d="M16 18.29a9.09 9.09 0 1 1 9.14-9.08A9.12 9.12 0 0 1 16 18.29Zm0-16.16a7.09 7.09 0 1 0 7.14 7.08A7.12 7.12 0 0 0 16 2.13Z" class="color402f6c svgShape"></path>
+    <path fill="#b66b05" d="M16 31.94a1 1 0 0 1-1-1V17.8a1 1 0 0 1 2 0v13.14a1 1 0 0 1-1 1Z" class="color402f6c svgShape"></path>
+    <path fill="#f8f2eb" d="M24.71 18.13a1.5 1.5 0 0 1 1.5 1.5v2.5h-3v-2.5a1.5 1.5 0 0 1 1.5-1.5Z" class="colorebf2f8 svgShape"></path>
+    <path fill="#b66b05" d="M26.21 23.13h-3a1 1 0 0 1-1-1v-2.5a2.5 2.5 0 0 1 5 0v2.5a1 1 0 0 1-1 1Zm-2-2h1v-1.5a.5.5 0 0 0-1 0Z" class="color402f6c svgShape"></path>
+    <path fill="#b66b05" d="M24.71 28.79a1 1 0 0 1-1-1v-4.62a1 1 0 0 1 2 0v4.63a1 1 0 0 1-1 .99zm2.29 0a1 1 0 0 1-1-1v-4.62a1 1 0 0 1 2 0v4.63a1 1 0 0 1-1 .99zm-4.58 0a1 1 0 0 1-1-1v-4.62a1 1 0 0 1 2 0v4.63a1 1 0 0 1-1 .99zM18 18a1 1 0 0 1-1-1V1.36a1 1 0 0 1 2 0V17a1 1 0 0 1-1 1zm-4-.72a1 1 0 0 1-1-1V2.13a1 1 0 1 1 2 0v14.15a1 1 0 0 1-1 1z" class="color402f6c svgShape"></path>
+    <path fill="#b66b05" d="M24 8.89H8a1 1 0 0 1 0-2h16a1 1 0 1 1 0 2zm-.88-2.61H8.88a1 1 0 0 1 0-2h14.24a1 1 0 0 1 0 2zm.59 5.24H8.3a1 1 0 0 1 0-2h15.4a1 1 0 0 1 0 2zm-1.52 2.61H9.81a1 1 0 0 1 0-2h12.38a1 1 0 0 1 0 2z" class="color402f6c svgShape"></path>
+  </g>
+</svg>

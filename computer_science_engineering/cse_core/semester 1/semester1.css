@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.horizontal_wrapper{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.horizontal_nav_left{
+    display: flex;
+}
+.horizontal_nav_left a{
+    color: currentColor;
+    text-decoration: none;
+}
+.horizontal_nav_right{
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 19px;
+}
+
+.horizontal_nav_right a{
+    color:rgb(255, 238, 0);
+    text-decoration: none;
+    
+}
+.horizontal_nav_items{
+    display: block;
+    padding: 15px 35px;
+    font-size: 20px;
+    font-weight: 550;
+    text-transform: capitalize;
+    position: relative;
+    text-decoration: none;
+    transition: .5s;
+    padding-top: 17px;
+}
+.horizontal_nav_items:hover{
+    color: rgb(0, 238, 255);
+}
+
+.horizontal_nav_items span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-bottom: 3px solid rgb(229, 255, 0);
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s
+}
+.horizontal_nav_items:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+.horizontal_nav_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 15px;
+    padding-right: 0;
+}
+
+/******************wrapper_body_html*******************/
+.wrapper_body_html {
+    display: grid;
+    grid-template-columns: 210px 1fr; /* Sidebar and content */
+    height:auto; /* Full height minus the navigation bar height */;
+}
+
+.wrapper_body_left {
+    background-image: linear-gradient(to right, rgb(7, 26, 0), rgb(0, 2, 29));
+    height: calc(100vh - 60px);
+    overflow-y: auto; /* Add scroll if content overflows */
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper_body_left_heading {
+    font-size: 22px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(7, 26, 0), rgb(0, 2, 29));
+    padding:10px;
+    color: #ffbb00;
+}
+
+.horizontal_menu_item_aside {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 19px;
+    padding-top: 5px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-weight: 550;
+    border-radius: 10%;
+}
+.horizontal_menu_item_aside:hover{
+    background-color: #7f7e7e;
+    padding: 10px;
+    color: aqua;
+    border-color: aliceblue;
+    border-radius: 10px;
+    font-weight: 550;
+}
+
+.iframe_content_display{
+    width: 100%;
+    height: 100%;
+    border: none;
+
+}
+
+
+
+
+
+
+
+
+.HTML_btn_container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top:20px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.HTML_btn_container a{
+    display: block;
+    font-size: 19px;
+    padding: 10px 45px;
+    text-align: center;  
+    text-decoration: none;
+    border-radius: 7px;  
+    background-color: rgb(26, 26, 26);
+    color:#ffffff;
+}
+.HTML_btn_container a:hover{
+    background-color:rgb(98, 98, 98);
+    color: rgb(255, 255, 0);
+}
+
+.wrapper_html_content_home{
+    width: 100%;
+    background-color: #111111;
+}
+.wrapper_html_home_heading_section h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+.wrapper_html_home_heading_section{
+    padding: 30px;
+}
+
+
+
+.content_html{
+    padding: 50px;
+    font-size: 18px;
+}
+.content_html a{
+    padding: 7px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+.bg-heading{
+    color: rgb(255, 255, 255);
+}
+.heading{
+    text-align: center;
+    text-emphasis: none;
+    padding: 20px 00px;
+    font-size: 45px;
+    font-weight: 900;
+    border-radius: 95px;
+    text-decoration-line:underline;
+    transform: translate(0%, 0%);
+    background: linear-gradient(to right, #ffb300, #ffffff 90%, #ff9500 100%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    white-space: nowrap;
+}
+@keyframes shine {
+    0%{
+        background-position: 10px;
+    }
+    60%{
+        background-position: 630px;
+    }
+    100%{
+        background-position: 1350px;
+    }
+}
